@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mobile_06_ProfessorSalario</string>
+    <string name="hint1">Horas</string>
+    <string name="hint2">Anos</string>
+    <string name="hint3">Professor Horista</string>
+    <string name="hint4">Professor Titular</string>
+    <string name="Title">Calcular Salário</string>
+    <string name="calc">Calcular</string>
+</resources>

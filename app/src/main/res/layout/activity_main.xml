@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etnAnos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="62dp"
+        android:ems="10"
+        android:hint="@string/hint2"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toBottomOf="@+id/etnHoras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etnHoras"
+        app:layout_constraintTop_toTopOf="@+id/etnHoras" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/etnHoras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <RadioButton
+            android:id="@+id/rbHorista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint3" />
+
+        <RadioButton
+            android:id="@+id/rbTitular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint4" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etnHoras"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="69dp"
+        android:ems="10"
+        android:hint="@string/hint1"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btCalc"
+        app:layout_constraintEnd_toStartOf="@+id/etnAnos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="57dp"
+        android:text="@string/Title"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="229dp"
+        android:textSize="24sp"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCalc" />
+
+    <Button
+        android:id="@+id/btCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:text="@string/calc"
+        app:layout_constraintBottom_toTopOf="@+id/tvRes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnHoras" />
+</androidx.constraintlayout.widget.ConstraintLayout>
